@@ -1,0 +1,65 @@
+Working Title - Nikola Stanimirov
+
+Idea: ---- stream ----
+
+Idea: ----  SHOP ----
+
+Robi's Idea ---- Dating site ----
+{
+Content:
+Applicant Form for better knowleadge of the participant
+Profiles 
+Who is around you - geo locatio 
+Messages
+}
+
+
+
+                        Nick's Pizza
+{
+Page 1: INTRODUCTION
+    Content:
+        - social media - possible fb page - hides when you scroll down
+        - nav menu - fix on the side
+        - slider with food images 
+            - stove on fire
+            - wood fire bbq
+            - food
+            - deal of the day
+        -  what's new
+        - reviews - store at DB 
+Page 2: CONTACTS
+        - email
+        - phone
+        - CEO  
+        - FIRM INFO 
+        - location (geo)
+
+Page 3: MENU - could be a interactive ( slider ) 
+        - pizza
+        - pasta
+        - spaggetti
+             (information about each of the products)
+                - pictures with bullet ingredients
+        -  search option
+Page 4: Ordering - Form with the desired food
+
+                        <--- EXTRAS --->
+        - PHP/NODE.JS (back-end for the order stored locally)
+        - LOGO -- pizza on fire ( could be implemented N somewhere)
+        - add logo at the url
+        - possible calculation of the time which would be needed for delivery
+        - User LogIN?
+
+                 <--- COLORS OF THE THEME --->
+        #1A1A1D - black
+        #4E4E50 - grey
+        #6F2232 - dark red
+        #950740 - dark pink
+        #C3073F - lighter pink
+http://www.onextrapixel.com/wp-content/uploads/2014/07/magnific.jpg  possible design of the page
+
+
+}
+
+
