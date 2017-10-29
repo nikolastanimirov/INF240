@@ -27,7 +27,7 @@ Page 1: INTRODUCTION
             - food
             - deal of the day
         -  what's new
-        - reviews - store at DB 
+        - reviews - store at DB (modern-hw)
 Page 2: CONTACTS
         - email
         - phone
