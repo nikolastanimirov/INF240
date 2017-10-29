@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" text="text/css" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" text="text/css" href="css/style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="javascript/RSlider.js"></script>
+    
+    
+    <title>Nick's Pizza</title>
+</head>
+<body>
+    <!-- Social Media -->
+    <header>
+        <div id="social-media">
+            <img id="page-logo" src="assets/page-logo.png"/>
+            <ul>
+                <li><a href="#"><img src="assets/fb-logo.png"></a></li>
+                <li><a href="#"><img src="assets/ig-logo.png"></a></li>
+                <li><a href="#"><img src="assets/snap-logo.png"></a></li>
+                <li><a href="#"><img src="assets/Twitter-Logo.png"></a></li>
+            </ul>
+        </div>
+    </header>
+    <body>
+        <div id="contact-container">
+            <div class="contact-cover">
+                <img src="images/pizza-photo3.jpg"/>
+                <div class="back-nav">
+                    <ul>
+                        <li><a href="index.html"><img src="assets/house-con.png"></a></li>
+                        <li><a href="contact.html"><img src="assets/phone2-icon.png"></a></li>
+                        <li><a href="order.html"><img src="assets/pizza2-icon.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+					<form id="contact-form" action="contact.php" method="post">
+                        <h2>Send us a message</h2>
+                        <div class="line"><hr class="style-two"></div>
+						<div class="contact-info">
+							<div class="col-md-6">
+								<input name="name" class="form-control" id="name" type="text" placeholder="Name">
+							</div>
+							<div class="col-md-6">
+								<input name="mail" class="form-control" id="mail" type="text" placeholder="Email">
+							</div>
+							<div class="col-md-6">
+								<input name="subject" class="form-control" id="subject" type="text" placeholder="Subject">
+							</div>
+							<div class="col-md-6">
+								<input name="telephone" class="form-control" id="telephone" type="text" placeholder="Telephone">
+							</div>
+						</div>
+						<textarea name="comment" class="form-control" id="comment" placeholder="Message"></textarea>
+						<button type="button" class="btn btn-danger" id="submit_contact" value="Send Message">Submit</button>
+						<div id="msg" class="message"></div>
+					</form>
+		</div>      
+    <footer>
+        <p class="copyright"></p>
+    </footer>
+    <script>
+    //automatically updates the years of the copyright			
+    $(".copyright").append( "Copyright " + new Date().getFullYear() + " Nick's Pizza&copy; . All rights reserved.");
+    </script>   
+</body>
+</html>
