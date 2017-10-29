@@ -1,0 +1,182 @@
+@media screen and (max-width: 320px) { @viewport { width: 320px; } }  
+@media screen and (min-width: 768px) and (max-width: 959px) { @viewport { width: 768px; } }
+body{
+    background: #4e4e50;
+    margin: 0 auto;
+    color:black;
+}
+/* ------- SOCIAL MEDIA -------- */
+header{
+    width:100%;
+    height: 70px;
+    position: relative;
+    margin: 0 auto;
+    position: relative;
+    background: #1A1A1D;
+}
+header ul{
+    float:right;
+    padding: 10px 65px;
+    margin: 0px 10px;
+}
+header ul img {
+    width:50px;
+    height: 50px;
+    margin: 0px 10px;
+}
+header ul li{
+    display: inline-block;
+    text-decoration: none;
+}
+/* ------- END OF SOCIAL MEDIA -------- */
+#nav-menu{
+    width: 800px;
+    height: 45px;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    z-index: 100;
+    margin:0 15px;
+    padding: 35px 25px;
+    color: black !important;
+    border: 1px solid red;
+
+}
+#nav ul{
+    color: black !important;
+}
+#nav-menu li{
+    text-decoration: none;
+    list-style-type: none;
+    color: black !important;
+    border: 1px solid black;
+    border-bottom-left-radius: 1.2em;
+    border-bottom-right-radius: 1.2em;
+    border-top-left-radius: 1.2em;
+    border-top-right-radius: 1.2em;
+    float: right;
+    padding: 15px 10px;
+    margin: 0 10px;
+
+    
+}
+
+/* ------- RESPONSIVE SLIDER -------- */
+#rslider{
+    width: 100%;
+    height: 600px;
+}
+.Slider {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+    }
+  
+  .Slider li {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    }
+  
+  .Slider li:first-child { 
+    position: relative;
+    display: block;
+    float: left;
+    }
+  
+  .Slider img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  } 
+  .page{
+    position: relative;
+    margin: auto;
+    background-color: orange;
+    width: 70%;
+    height: 10%;
+  
+  
+  }
+/* ---------- END OF THE RS  ----------*/
+
+/* ---------- HORIZONTAL LINE  ----------*/
+  .line{
+      padding: 35px 15px;
+  }
+  hr.style-two {
+    border: 0px;
+    height: 8px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #1A1A1D, rgba(0, 0, 0, 0));
+}
+hr.style-two:after {
+    content: " Nick's Pizza";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 56px;
+    padding: 0 0.25em;
+    background: #4E4E50;
+    text-align: center;
+    font-family: 'Berkshire Swash';
+    color:#5a0f2e;
+}
+/* ---------- END OF HR  ----------*/
+
+/* ---------- REVIW FORM --------------*/
+#reviews{
+    position: relative;
+    width:800px;
+    height: 500px;
+    padding: 20px 20px;
+    margin: 50px auto;
+    border-bottom-left-radius: 1.5em;
+    border-top-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+    border:3px double #1A1A1D;
+
+}
+#reviews h1{
+    padding: 25px 15px;
+    color: #6F2232;
+}
+.form-group label{
+    padding: 15px 15px;
+    color: #6F2232;
+    font-size: 26px;
+}
+#submit-button{
+    margin: 0 auto;
+    width:250px;
+    height:45px;
+    display: block;
+}
+/* ---------- END OF REVIW FORM --------------*/
+
+/* ---------- FOOTER --------------*/
+footer{
+    width:100%;
+    height: 70px;
+    background: #1A1A1D;
+    font-size: 20px;
+    color:#C3073F;
+    text-align: center;
+    padding: 15px 15px;
+    margin: 0 auto;
+}
+/* ---------- END OF FOOTER --------------*/
