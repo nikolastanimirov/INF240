@@ -3,7 +3,6 @@
 body{
     background: #4e4e50;
     margin: 0 auto;
-    color:black;
 }
 /* ------- SOCIAL MEDIA -------- */
 header{
@@ -29,37 +28,6 @@ header ul li{
     text-decoration: none;
 }
 /* ------- END OF SOCIAL MEDIA -------- */
-#nav-menu{
-    width: 800px;
-    height: 45px;
-    position: absolute;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    z-index: 100;
-    margin:0 15px;
-    padding: 35px 25px;
-    color: black !important;
-    border: 1px solid red;
-
-}
-#nav ul{
-    color: black !important;
-}
-#nav-menu li{
-    text-decoration: none;
-    list-style-type: none;
-    color: black !important;
-    border: 1px solid black;
-    border-bottom-left-radius: 1.2em;
-    border-bottom-right-radius: 1.2em;
-    border-top-left-radius: 1.2em;
-    border-top-right-radius: 1.2em;
-    float: right;
-    padding: 15px 10px;
-    margin: 0 10px;
-
-    
-}
 
 /* ------- RESPONSIVE SLIDER -------- */
 #rslider{
@@ -74,7 +42,6 @@ header ul li{
     height: 100%;
     padding: 0;
     margin: 0;
-
     }
   
   .Slider li {
@@ -105,7 +72,6 @@ header ul li{
   .page{
     position: relative;
     margin: auto;
-    background-color: orange;
     width: 70%;
     height: 10%;
   
