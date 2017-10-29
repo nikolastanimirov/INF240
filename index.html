@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" text="text/css" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" text="text/css" href="css/style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="javascript/RSlider.js"></script>
+    
+    
+    <title>Nick's Pizza</title>
+</head>
+<body>
+    <!-- Social Media -->
+    <header>
+        <div id="social-media">
+            <img id="page-logo" src="assets/page-logo.png"/>
+            <ul>
+                <li><a href="#"><img src="assets/fb-logo.png"></a></li>
+                <li><a href="#"><img src="assets/ig-logo.png"></a></li>
+                <li><a href="#"><img src="assets/snap-logo.png"></a></li>
+                <li><a href="#"><img src="assets/Twitter-Logo.png"></a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Responsive Slider -->
+    <div id="rslider">
+          <ul id="nav-menu" font-color="black">
+            <li><a href="index.html">Contact US</a></li>
+            <li><a href="index.html">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+            <ul class="Slider">
+                    <li><img src="images/image4.jpg" /> </li>
+                    <li><img src="images/image5.jpg" /></li>
+                    <li><img src="images/image6.jpg" /></li>
+                </ul>
+    </div>
+    <div id="container">
+    <div class="line"><hr class="style-two"></div>
+        <!-- Reviews Form -->
+        <form id="reviews">
+            <h1>Leave your reviews here...</h1>
+            <div class="row">
+                <div class="col">
+                     <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+            <div class="form-group">
+                    <label for="exampleFormControlTextarea1"><strong>What's on your mind?</strong></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+            <button id="submit-button" type="button" class="btn btn-danger">Submit</button>
+        </form>
+        
+    </div>
+    <footer>
+        <p class="copyright"></p>
+    </footer>
+    <script>
+            //runs the slider
+              $(function() {
+                $(".Slider").RSlider();
+              });
+              //automatically updates the years of the copyright			
+                $(".copyright").append( "Copyright " + new Date().getFullYear() + " Nick's Pizza&copy; . All rights reserved.");
+            
+            </script>
+</body>
+</html>
