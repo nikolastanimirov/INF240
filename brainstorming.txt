@@ -41,13 +41,13 @@ Page 3: MENU - could be a interactive ( slider )
         - spaggetti
              (information about each of the products)
                 - pictures with bullet ingredients
-        -  search option
+         -  search option -------------------------------- !
 Page 4: Ordering - Form with the desired food
 
                         <--- EXTRAS --->
         - PHP/NODE.JS (back-end for the order stored locally)
         - LOGO -- pizza on fire ( could be implemented N somewhere)
-        - add logo at the url
+        - add logo at the url ----------------------------------------- ! 
         - possible calculation of the time which would be needed for delivery
         - User LogIN?
 
@@ -63,3 +63,9 @@ http://www.onextrapixel.com/wp-content/uploads/2014/07/magnific.jpg  possible de
 }
 
 
+ISSUES:
+when you go over the social media dropdown while width screen < 500 the nav bar comes on top
+radio buttons for different cm [ gets the selection and new prize]
+contact page - info [ code breaks when window.resize]
+resize images when width<500px
+-
