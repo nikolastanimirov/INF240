@@ -15,28 +15,109 @@
     <title>Nick's Pizza</title>
 </head>
 <body>
-    <!-- Social Media -->
-    <header>
-        <div id="social-media">
-            <img id="page-logo" src="assets/page-logo.png"/>
-            <ul>
-                <li><a href="#"><img src="assets/fb-logo.png"></a></li>
-                <li><a href="#"><img src="assets/ig-logo.png"></a></li>
-                <li><a href="#"><img src="assets/snap-logo.png"></a></li>
-                <li><a href="#"><img src="assets/Twitter-Logo.png"></a></li>
-            </ul>
-        </div>
-    </header>
+     <!-- Social Media -->
+    <!-- <div id="header"></div>
+         <script> 
+             $(function(){
+             $("#header").load("header.html");
+        });</script>-->
+        <header>
+            <div id="social-media">
+                <!--<img id="page-logo" src="assets/page-logo.png"/>-->
+                <ul>
+                    <li><a href="https://www.facebook.com/"><img id="social1" src="assets/fb-logo.png"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="assets/ig-logo.png"></a></li>
+                    <li><a href="https://www.snapchat.com/"><img src="assets/snap-logo.png"></a></li>
+                    <li><a href="https://www.twitter.com/"><img src="assets/Twitter-Logo.png"></a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <img id="social-icon" src="assets/social.png">
+                <div class="dropdown-content">
+                    <a href="https://www.facebook.com/"><img id="social1" src="assets/fb-logo.png">Facebook</a>
+                    <a href="https://www.instagram.com/"><img src="assets/ig-logo.png">Instagram</a>
+                    <a href="https://www.snapchat.com/"><img src="assets/snap-logo.png">Snapchat</a>
+                    <a href="https://www.twitter.com/"><img src="assets/Twitter-Logo.png">Twitter</a>
+                </div>
+              </div>
+        </header>
+                <div id="contact-container"> 
+                        <div class="back-nav">
+                            <ul>
+                                <li><a href="index.html"><img src="assets/house-con.png"></a></li>
+                                <li><a href="menu.html"><img src="assets/pizza2-icon.png"></a></li>
+                                <li><a href="contact.html"><img src="assets/phone2-icon.png"></a></li>
+                            </ul>
+                        </div>
     <body>
-
-
+        <div id="menu-container">
+        <p class="menu-top-header">Menu</p>
+        <hr>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a href="menu-pages/pizza-pages/page1.html"><img src="assets/pizza-black-icon.png" alt="pizza-photo"></a>
+                        <div class="caption">
+                        <h1>PIZZA</h1>
+                        <p><a href="menu-pages/pizza-pages/page1.html" class="btn btn-primary" role="button">Continue...</a></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                          <a href="menu-pages/pasta-pages/page1.html"><img src="assets/pasta-black-icon.png" alt="pizza-photo"></a>
+                        <div class="caption">
+                          <h1>PASTA</h1>
+                          <p><a href="menu-pages/pasta-pages/page1.html" class="btn btn-primary" role="button">Continue...</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--<div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                          <a href="menu-pages/spagetti-pages/page1.html"><img src="assets/spagetti-black-icon.png" alt="pizza-photo"></a>
+                        <div class="caption">
+                          <h1>SPAGETTI</h1>
+                          <p><a href="menu-pages/spagetti-pages/page1.html" class="btn btn-primary" role="button">Continue...</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>-->
+                  <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                          <a href="menu-pages/salads/page1.html"><img src="assets/salad-black-icon.png" alt="pizza-photo"></a>
+                        <div class="caption">
+                          <h1>SALADS</h1>
+                          <p><a href="menu-pages/salads/page1.html" class="btn btn-primary" role="button">Continue...</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                          <div class="thumbnail">
+                              <a href="menu-pages/desserts-pages/page1.html" ><img src="assets/cake-black-icon.png" alt="pizza-photo"></a>
+                            <div class="caption">
+                              <h1>DESSERTS</h1>
+                              <p><a href="menu-pages/desserts-pages/page1.html" class="btn btn-primary" role="button">Continue...</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>             
+        </div>
         
-    <footer>
-        <p class="copyright"></p>
-    </footer>
+        <footer>
+            <p class="copyright"></p>
+            <p class="resized-copy">Nick's Pizza &copy;</p>
+        </footer>
     <script>
     //automatically updates the years of the copyright			
     $(".copyright").append( "Copyright " + new Date().getFullYear() + " Nick's Pizza&copy; . All rights reserved.");
-    </script>   
+    </script>
+    <script src="javascript/script.js"></script>   
 </body>
 </html>

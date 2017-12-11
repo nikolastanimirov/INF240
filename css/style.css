@@ -1,5 +1,3 @@
-@media screen and (max-width: 320px) { @viewport { width: 320px; } }  
-@media screen and (min-width: 768px) and (max-width: 959px) { @viewport { width: 768px; } }
 body{
     background: #4e4e50;
     margin: 0 auto;
@@ -29,6 +27,44 @@ header ul li{
     display: inline-block;
     text-decoration: none;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index:2;
+    padding:10px 15px; 
+}
+.dropdown #social-icon{
+    width:50px;
+    height: 55px;
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4e4e50;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #6F2232
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #6F2232;
+}
+.dropdown-content a img{
+    width:25px;
+    height:25px;
+}
 /* ------- END OF SOCIAL MEDIA -------- */
 
 /* ------- RESPONSIVE SLIDER -------- */
@@ -44,8 +80,7 @@ header ul li{
     height: 100%;
     padding: 0;
     margin: 0;
-    }
-  
+}
   .Slider li {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -55,14 +90,12 @@ header ul li{
     height: 100%;
     left: 0;
     top: 0;
-    }
-  
+}
   .Slider li:first-child { 
     position: relative;
     display: block;
     float: left;
-    }
-  
+}
   .Slider img {
     display: block;
     height: auto;
@@ -70,21 +103,38 @@ header ul li{
     width: 100%;
     height: 100%;
     border: 0;
-  } 
+} 
   .page{
     position: relative;
     margin: auto;
     width: 70%;
     height: 10%;
-  
-  
-  }
+}
+.slider-navigation ul{
+    text-decoration: none;
+    list-style-type:none;
+    width: 300px;
+    height: 75px;
+    margin: 0 auto;
+    color:#6F2232 !important;  
+}
+.slider-navigation ul li{
+    display: inline-block;
+    padding: 15px;
+    margin: 0 auto;
+    color:#6F2232 !important;   
+}
+.slider-navigation ul li a:hover{
+    color:white;
+    text-decoration: none;
+    list-style-type: none;
+}
 /* ---------- END OF THE RS  ----------*/
 
 /* ---------- HORIZONTAL LINE  ----------*/
-  .line{
-      padding: 35px 15px;
-  }
+.line{
+    padding: 35px 15px;
+}
   hr.style-two {
     border: 0px;
     height: 8px;
@@ -107,7 +157,6 @@ hr.style-two:after {
 
 /* ---------- REVIW FORM --------------*/
 #reviews{
-    position: relative;
     width:800px;
     height: 500px;
     padding: 20px 20px;
@@ -117,7 +166,6 @@ hr.style-two:after {
     border-bottom-right-radius: 1.5em;
     border-top-right-radius: 1.5em;
     border:3px double #1A1A1D;
-
 }
 #reviews h1{
     padding: 25px 15px;
@@ -151,7 +199,7 @@ footer{
 /* ---------- CONTACT FORM --------------*/
 .contact-cover img{
     width:100%;
-    height: 350px;
+    height: 450px;
     z-index: 1;
     position: absolute;
 }
@@ -161,12 +209,44 @@ footer{
     position: relative;
     margin: 180px auto;
 }
+.contact-cover .back-nav ul li img:hover{
+    border: 5px double  #C3073F;
+}
+.back-nav ul li img{
+    z-index:2;
+    border: 3px dashed black;
+    position:relative;
+    margin:20px auto;
+    padding:0px 10px;
+}
+.back-nav ul li img:hover{
+    border: 5px solid #6F2232;
+}
 .back-nav ul li{
     text-decoration: none;
     list-style-type: none;
     display: inline-block;
+    padding:0px 10px;
 }
 .back-nav ul li img{
+    width:95px;
+    height: 95px;
+    
+}
+.home-back-nav{
+    padding: 15px 15px;
+}
+.home-back-nav ul li img{
+    border: 3px solid black;
+    position: relative;
+    z-index:100;
+}
+.home-back-nav ul li{
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+}
+.home-back-nav ul li img{
     width:50px;
     height: 50px;
     
@@ -179,7 +259,7 @@ footer{
     color:#fff;
     padding: 15px 15px;
     z-index: 4;
-    position: relative;
+
 }
 #contact-form h2{
     margin: 0 auto;
@@ -199,3 +279,160 @@ footer{
     height: 35px;
     margin: 15px 15px;
 }
+#contact-container{
+    width:100%;
+    height:100%;
+    margin: 50px auto;
+    position: relative;
+}
+#firm-info{
+    font-size:23px;
+    width:500px;
+    height: 500px;
+    position: relative;
+    margin-top:-500px;
+    padding:15px 25px;
+}
+#firm-info h3{
+    text-decoration: underline !important;
+}
+#page-logo{
+    width:150px;
+    height: 150px;
+    border: 1px solid red;
+    margin-top:-30px;
+}
+#page-logo img{
+    width:150px;
+    height: 150px;
+}
+/* ------ MENU PAGE ------- */
+#menu-container{
+    margin: 0 auto;
+}
+#menu-container .row{
+    display: inline-block;
+    padding: 35px 115px;
+    
+}
+.thumbnail img{
+    width:300px;
+    height:300px;
+    border-bottom-left-radius: 1.2em;
+    border-bottom-right-radius: 1.2em;
+    border-top-right-radius: 1.2em;
+    border-top-left-radius: 1.2em;
+}
+#menu-container .menu-top-header{
+    text-align: center;
+    font-size: 72px;
+    
+}
+#menu-header .pizza{
+    width:100px;
+    height: 100px;
+}
+#menu-header h2{
+    text-align: left;
+    padding:0px 35px;
+}
+#menu-container hr{
+    width:75%;
+    height: 2px;
+    background:black;
+}
+.media .media-object{
+    width:200px;
+    height:200px;
+    padding: 10px;
+    border-top-left-radius: 1.2em;
+    border-bottom-right-radius: 1.2em;
+    border-top-right-radius: 1.2em;
+    border-bottom-left-radius: 1.2em; 
+}
+.media .media-body{
+    margin: 0 auto;
+    padding: 15px 15px;
+}
+.media .media-footer{
+    padding: 15px 0px;
+    font-size: 20px;
+}
+.media button{
+    float: right;
+    margin-right: 30px;
+    width: 70px;
+    height: 50px;
+}
+.media-separator {
+    border: 3px dotted red;
+    border-color: #4e4e50;
+  }
+
+/* ------- PAGE NUMBER NAVIGATION ------ */
+#navigation pagination ul li a{
+    font-size: 25px;
+}
+.page-nav{
+    font-size: 26px;
+}
+.page-nav .number{
+    font-size:42px;
+}
+.page-nav ul{
+    text-decoration: none;
+    list-style-type:none;
+}
+.page-nav ul li{
+    display: inline-block;
+    
+}
+.page-nav ul .number .active { 
+    color: yellow !important;
+}
+/* ------- END OF PAGE NUMBER NAVIGATION ------ */
+.drop-menu{
+    border:3px solid red;
+    height:400px;
+    margin: 0 auto;
+}
+#order-form h2{
+    padding: 15px 15px;
+    text-decoration:underline;
+}
+#order-form{
+    padding: 0px 45px;
+    margin: 0px auto;
+}
+.order-info input{
+    padding:15px 25px;
+}
+.order-info .col-md-4{
+    padding:5px 0px;
+}
+#pizza-comment{
+    width:730px;
+    height:75px;
+}
+.top{
+    margin: 0 auto;
+    width:550px;
+    height:50px;
+}
+.top ul{
+    list-style-type:none;
+    text-decoration:none;
+}
+.menu-top li {
+    display:inline-block;
+}
+.menu-top li a{
+    color:#6F2232 !important;
+    padding:15px 15px;
+    font-size:24px;
+}
+.menu-top li a:hover{
+    text-decoration:none;
+    color: white;
+}
+/*----------- FIRM INFORMATION -------- */

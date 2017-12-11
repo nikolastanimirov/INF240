@@ -16,29 +16,46 @@
 </head>
 <body>
     <!-- Social Media -->
+    <!--<div id="header"></div>
+    <scipt>           
+        $(function(){
+        $("#header").load("header.html");
+         });
+    </script>-->
     <header>
         <div id="social-media">
-            <img id="page-logo" src="assets/page-logo.png"/>
+            <!--<img id="page-logo" src="assets/page-logo.png"/>-->
             <ul>
-                <li><a href="#"><img src="assets/fb-logo.png"></a></li>
-                <li><a href="#"><img src="assets/ig-logo.png"></a></li>
-                <li><a href="#"><img src="assets/snap-logo.png"></a></li>
-                <li><a href="#"><img src="assets/Twitter-Logo.png"></a></li>
+                <li><a href="https://www.facebook.com/"><img id="social1" src="assets/fb-logo.png"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="assets/ig-logo.png"></a></li>
+                <li><a href="https://www.snapchat.com/"><img src="assets/snap-logo.png"></a></li>
+                <li><a href="https://www.twitter.com/"><img src="assets/Twitter-Logo.png"></a></li>
             </ul>
         </div>
+        <div class="dropdown">
+            <img id="social-icon" src="assets/social.png">
+            <div class="dropdown-content">
+                <a href="https://www.facebook.com/"><img id="social1" src="assets/fb-logo.png">Facebook</a>
+                <a href="https://www.instagram.com/"><img src="assets/ig-logo.png">Instagram</a>
+                <a href="https://www.snapchat.com/"><img src="assets/snap-logo.png">Snapchat</a>
+                <a href="https://www.twitter.com/"><img src="assets/Twitter-Logo.png">Twitter</a>
+            </div>
+          </div>
     </header>
     <body>
-        <div id="contact-container">
+        <div id="contact-header">
             <div class="contact-cover">
                 <img src="images/pizza-photo3.jpg"/>
                 <div class="back-nav">
                     <ul>
                         <li><a href="index.html"><img src="assets/house-con.png"></a></li>
-                        <li><a href="contact.html"><img src="assets/phone2-icon.png"></a></li>
-                        <li><a href="order.html"><img src="assets/pizza2-icon.png"></a></li>
+                        <li><a href="menu.html"><img src="assets/pizza2-icon.png"></a></li>
+                         <li><a href="contact.html"><img src="assets/phone2-icon.png"></a></li>
                     </ul>
                 </div>
             </div>
+        </div>
+            <div id ="contact-container">
 					<form id="contact-form" action="contact.php" method="post">
                         <h2>Send us a message</h2>
                         <div class="line"><hr class="style-two"></div>
@@ -57,16 +74,24 @@
 							</div>
 						</div>
 						<textarea name="comment" class="form-control" id="comment" placeholder="Message"></textarea>
-						<button type="button" class="btn btn-danger" id="submit_contact" value="Send Message">Submit</button>
+						<input type="submit" id="submit" value="Submit"> 
 						<div id="msg" class="message"></div>
-					</form>
-		</div>      
-    <footer>
-        <p class="copyright"></p>
-    </footer>
+                    </form>
+                    <div id="firm-info">
+                        <h3>CEO:</h3><p>Nikola Stanimirov</p>
+                        <h3>Telephone:</h3><p>+359********</p>
+                        <h3>Emial:</h3><p>nickspizza@gmail.com</p>
+                        <h3>More about us:</h3><p>Welcome to our real italian pizza restaurant. For orders check out our menu... </p>
+                    </div> 
+                </div>      
+        <footer>
+            <p class="copyright"></p>
+            <p class="resized-copy">Nick's Pizza &copy;</p>
+        </footer>
     <script>
     //automatically updates the years of the copyright			
     $(".copyright").append( "Copyright " + new Date().getFullYear() + " Nick's Pizza&copy; . All rights reserved.");
-    </script>   
+    </script>
+    <script src="javascript/script.js"></script>   
 </body>
 </html>
